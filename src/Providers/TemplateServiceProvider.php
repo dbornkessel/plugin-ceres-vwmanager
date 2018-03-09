@@ -90,11 +90,11 @@ class TemplateServiceProvider extends ServiceProvider
         }, self::EVENT_LISTENER_PRIORITY);
 
         $eventDispatcher->listen( 'IO.ResultFields.*', function(ResultFieldTemplate $templateContainer) {
-            $templateContainer->setTemplates([
+/*            $templateContainer->setTemplates([
                 ResultFieldTemplate::TEMPLATE_LIST_ITEM     => 'Ceres::ResultFields.ListItem',
                 ResultFieldTemplate::TEMPLATE_SINGLE_ITEM   => 'Ceres::ResultFields.SingleItem',
                 ResultFieldTemplate::TEMPLATE_BASKET_ITEM   => 'Ceres::ResultFields.BasketItem'
-            ]);
+            ]);*/
         }, self::EVENT_LISTENER_PRIORITY);
 
         // provide mapped category IDs - DEPRECATED?
